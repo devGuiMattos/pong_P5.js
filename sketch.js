@@ -74,10 +74,10 @@ function Ball(){
 function Player(){
   rect(xPlayer, yPlayer, 7, lenPlayer)
   
-  if(keyIsDown(UP_ARROW)){
+  if(keyIsDown(UP_ARROW) || keyIsDown(83)){
     yPlayer -= 4;
   }
-  if(keyIsDown(DOWN_ARROW)){
+  if(keyIsDown(DOWN_ARROW) || keyIsDown(87)){
     yPlayer += 4;
   }
   
